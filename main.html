@@ -1,10 +1,11 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>"JavaScript in HTML"</title>
-        <script type = "text/JavaScript">
-        alert('Alert Box');
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"JavaScript in HTML"</title>
+    <script type="text/JavaScript">
+
         console.log('A message in console');
         var message;
         message = 'Hello Javascript';
@@ -48,13 +49,44 @@
         console.log(bugfixText2);
 
         var bugfixText3 = 'bug fix 3';
-        
+
+        var yes = true;
+        var no = false;
+
+        console.log(yes);
+        console.log(no);
+        console.log(typeof yes);
+
+        //Conditional Operators
+        var age = 18, isMinor;
+        isMinor = age >=18 ? 'No' : 'Yes';
+        console.log(isMinor);
+
+        //Assignment Operation - Compound
+        var balance = 5000, credit = 2000;
+       // balance = balance + credit;
+       balance += credit;
+       console.log('Balance :', balance);
+
+       //If Else condition
+       var personOneAge = 45;
+       var personTwoAge = 54;
+       if (personOneAge > personTwoAge) {
+
+           console.log('Person One is older than Person Two')
+
+          } else {
+               console.log('Person two is older than person one')
+           }      
+
+
         </script>
-    </head>
-    <body>
-        <noscript>This web page needs JavaScript enabled browser to work properly.!!</noscript>
-        <h1> JavaScript in HTML</h1>
-        <p>This is my first JavaScript learning process</p>
-    </body>
+</head>
+
+<body>
+    <noscript>This web page needs JavaScript enabled browser to work properly.!!</noscript>
+    <h1> JavaScript in HTML</h1>
+    <p>This is my first JavaScript learning process</p>
+</body>
 
 </html>
